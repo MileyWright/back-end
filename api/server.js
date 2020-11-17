@@ -8,14 +8,6 @@ const usersRouter = require('../routes/users/users-router.js');
 
 
 
-// server.use(function (req, res, next) {
-//     res.setHeader("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
-//   res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
-//     next();
-// });
-
-
 server.use(helmet());
 server.use(express.json());
 server.use(cors());
