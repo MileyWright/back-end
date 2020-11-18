@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const Users = require(".js");
+const Users = require("./users-modal.js");
 const restricted = require("../../auth/restricted-middleware.js");
 
 router.get("/testOperators", restricted, checkRole('operator'), (req, res) => { 
